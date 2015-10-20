@@ -1,5 +1,5 @@
 # ForceTouchGestureRecognizer
-UIGestureRecognizer subclass enabling 3D Touch
+UIGestureRecognizer Swift subclass enabling 3D Touch
 ## Installation
 ### CocoaPods
 [CocoaPods][] is a dependency manager for Cocoa projects. To install Reachability.swift with CocoaPods:
@@ -9,7 +9,7 @@ UIGestureRecognizer subclass enabling 3D Touch
  2. Update your Podfile to include the following:
 
     ``` ruby
-    pod 'ForceTouchGestureRecognizer', git: 'https://github.com/ashleymills/ForceTouchGestureRecognizer'
+    pod 'ForceTouchGestureRecognizerSwift', git: 'https://github.com/ashleymills/ForceTouchGestureRecognizer.swift'
     ```
 
  3. Run `pod install`.
