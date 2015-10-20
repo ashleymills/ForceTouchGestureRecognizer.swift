@@ -1,4 +1,4 @@
-# ForceTouchGestureRecognizer
+# ForceTouchGestureRecognizer.swift
 UIGestureRecognizer Swift subclass enabling 3D Touch
 ## Installation
 ### CocoaPods
