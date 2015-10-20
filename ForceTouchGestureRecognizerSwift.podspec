@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name         = 'ForceTouchGestureRecognizer'
+  s.name         = 'ForceTouchGestureRecognizerSwift'
   s.version      = '0.1'
-  s.homepage     = 'https://github.com/ashleymills/ForceTouchGestureRecognizer'
+  s.homepage     = 'https://github.com/ashleymills/ForceTouchGestureRecognizer.swift'
   s.authors      = {
     'Ashley Mills' => 'ashleymills@mac.com'
   }
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.platform = :ios, "9.0"
   s.ios.deployment_target = "8.0"
   s.source       =  {
-    :git => 'https://github.com/ashleymills/ForceTouchGestureRecognizer.git',
+    :git => 'https://github.com/ashleymills/ForceTouchGestureRecognizer.swift.git',
     :tag => 'v'+s.version.to_s
   }
   s.source_files = 'ForceTouchGestureRecognizer.swift'
