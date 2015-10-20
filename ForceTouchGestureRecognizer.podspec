@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
 
 # Source Info
   s.ios.platform = :ios, "9.0"
-  s.ios.deployment_target = "9.0"
+  s.ios.deployment_target = "8.0"
   s.source       =  {
-    :git => 'https://github.com/ashleymills/ForceTouchGestureRecognizer',
+    :git => 'https://github.com/ashleymills/ForceTouchGestureRecognizer.git',
     :tag => 'v'+s.version.to_s
   }
   s.source_files = 'ForceTouchGestureRecognizer.swift'
