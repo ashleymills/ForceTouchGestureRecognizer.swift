@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA93C65F1BDBD7D2006A0A41 /* ForceTouchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA93C65E1BDBD7D2006A0A41 /* ForceTouchGestureRecognizer.swift */; };
 		CAFC533B1BDA8F2B00D7BD0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC533A1BDA8F2B00D7BD0B /* AppDelegate.swift */; };
 		CAFC533D1BDA8F2B00D7BD0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC533C1BDA8F2B00D7BD0B /* ViewController.swift */; };
 		CAFC53401BDA8F2B00D7BD0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFC533E1BDA8F2B00D7BD0B /* Main.storyboard */; };
 		CAFC53421BDA8F2B00D7BD0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFC53411BDA8F2B00D7BD0B /* Assets.xcassets */; };
 		CAFC53451BDA8F2B00D7BD0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFC53431BDA8F2B00D7BD0B /* LaunchScreen.storyboard */; };
-		CAFC534D1BDA8FE900D7BD0B /* ForceTouchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC534C1BDA8FE900D7BD0B /* ForceTouchGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA93C65E1BDBD7D2006A0A41 /* ForceTouchGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForceTouchGestureRecognizer.swift; path = ../../ForceTouchGestureRecognizer.swift; sourceTree = "<group>"; };
 		CAFC53371BDA8F2B00D7BD0B /* Force Touch demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Force Touch demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFC533A1BDA8F2B00D7BD0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFC533C1BDA8F2B00D7BD0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		CAFC53411BDA8F2B00D7BD0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAFC53441BDA8F2B00D7BD0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAFC53461BDA8F2B00D7BD0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAFC534C1BDA8FE900D7BD0B /* ForceTouchGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceTouchGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			children = (
 				CAFC533A1BDA8F2B00D7BD0B /* AppDelegate.swift */,
 				CAFC533C1BDA8F2B00D7BD0B /* ViewController.swift */,
-				CAFC534C1BDA8FE900D7BD0B /* ForceTouchGestureRecognizer.swift */,
+				CA93C65E1BDBD7D2006A0A41 /* ForceTouchGestureRecognizer.swift */,
 				CAFC533E1BDA8F2B00D7BD0B /* Main.storyboard */,
 				CAFC53411BDA8F2B00D7BD0B /* Assets.xcassets */,
 				CAFC53431BDA8F2B00D7BD0B /* LaunchScreen.storyboard */,
@@ -138,8 +138,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAFC533D1BDA8F2B00D7BD0B /* ViewController.swift in Sources */,
-				CAFC534D1BDA8FE900D7BD0B /* ForceTouchGestureRecognizer.swift in Sources */,
 				CAFC533B1BDA8F2B00D7BD0B /* AppDelegate.swift in Sources */,
+				CA93C65F1BDBD7D2006A0A41 /* ForceTouchGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
