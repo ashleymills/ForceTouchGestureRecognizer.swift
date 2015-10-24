@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Force_Touch_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqD-gs-GJC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hya-W2-PRk">
+                                <rect key="frame" x="209.5" y="280" width="90.5" height="39.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fE-5Z-c4h">
+                                <rect key="frame" x="308" y="280" width="20.5" height="39.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hya-W2-PRk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9eM-mK-DEF"/>
+                            <constraint firstItem="SqD-gs-GJC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Eh1-lR-y8c"/>
+                            <constraint firstItem="SqD-gs-GJC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OLD-Dx-SLH"/>
+                            <constraint firstItem="8fE-5Z-c4h" firstAttribute="leading" secondItem="Hya-W2-PRk" secondAttribute="trailing" constant="8" id="S2z-fc-zSz"/>
+                            <constraint firstItem="Hya-W2-PRk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UxZ-bB-LXK"/>
+                            <constraint firstItem="8fE-5Z-c4h" firstAttribute="baseline" secondItem="Hya-W2-PRk" secondAttribute="baseline" id="YBW-41-euh"/>
+                            <constraint firstItem="SqD-gs-GJC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="cvv-cQ-WpF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SqD-gs-GJC" secondAttribute="bottom" id="hm2-Qo-7uL"/>
+                            <constraint firstAttribute="trailing" secondItem="SqD-gs-GJC" secondAttribute="trailing" id="wh8-Ih-zIe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Eh1-lR-y8c"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="forceLabel" destination="8fE-5Z-c4h" id="JxV-ls-waV"/>
+                        <outlet property="innerView" destination="SqD-gs-GJC" id="Jk1-S7-12z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
