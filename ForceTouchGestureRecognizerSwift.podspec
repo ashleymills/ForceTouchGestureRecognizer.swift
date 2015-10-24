@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = 'ForceTouchGestureRecognizerSwift'
-  s.version      = '0.1'
+  s.version      = '0.2'
   s.homepage     = 'https://github.com/ashleymills/ForceTouchGestureRecognizer.swift'
   s.authors      = {
     'Ashley Mills' => 'ashleymills@mac.com'
   }
-  s.summary      = 'Replacement for Apple\'s Reachability re-written in Swift with callbacks.'
+  s.summary      = 'UIGestureRecognizer Swift subclass enabling 3D Touch'
   s.license      = { :type => 'MIT' }
 
 # Source Info

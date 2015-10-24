@@ -30,15 +30,17 @@ import UIKit.UIGestureRecognizerSubclass
 
 class ForceTouchGestureRecognizer: UIGestureRecognizer {
     
-    var forceValue: CGFloat?
-    var minimumValue: CGFloat = 0
+    private(set) var forceValue: CGFloat? // value between 0.0 - 1.0
     
-    private var previousValue: CGFloat = 0
+    var minimumValue: CGFloat = 0 // Value between 0.0 - 1.0 that needs to be reached before gesture begins
+    var tolerance: CGFloat = 1 // Once force drops below maxValue - tolerance, the gesture ends
+    
+    private var maxValue: CGFloat = 0
     
     override func reset() {
         super.reset()
         forceValue = nil
-        previousValue = 0
+        maxValue = 0
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent) {
@@ -64,10 +66,10 @@ class ForceTouchGestureRecognizer: UIGestureRecognizer {
                 }
             } else {
                 
-                if value < previousValue {
+                if value < (maxValue - tolerance) {
                     state = .Ended
                 } else {
-                    previousValue = self.forceValue ?? 0
+                    maxValue = max(self.forceValue ?? 0, maxValue)
                     self.forceValue = value
                     state = .Changed
                 }

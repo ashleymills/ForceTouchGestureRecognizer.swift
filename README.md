@@ -23,18 +23,18 @@ Just drop the **ForceTouchGestureRecognizer.swift** file into your project. That
 ## Example use
 
 ````
-        override func viewDidLoad() {
-            super.viewDidLoad()
-       
-            let forceTouchGesture = ForceTouchGestureRecognizer()
-            forceTouchGesture.addTarget(self, action: "pressView:")
-            forceTouchGesture.minimumValue = 0.1 // Minimum force value before touch is recognised 
-            view.addGestureRecognizer(forceTouchGesture)
-        }
-        
-        func pressView(gesture: ForceTouchGestureRecognizer) {
-            print("force: \(gesture.forceValue)")  // forceVouch is CGFloat between 0 & 1
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+   
+        let forceTouchGesture = ForceTouchGestureRecognizer(target: self, action: "pressView:")
+        forceTouchGesture.minimumValue = 0.1     // Minimum force value before touch is recognised 
+        forceTouchGesture.tolerance = 0.2        // Allows the pressure to be lifted slightly without the gesture ending
+        view.addGestureRecognizer(forceTouchGesture)
+    }
+    
+    func pressView(gesture: ForceTouchGestureRecognizer) {
+        print("force: \(gesture.forceValue)")  // forceVouch is CGFloat between 0 & 1
+    }
 ````
 
 ## Want to help?

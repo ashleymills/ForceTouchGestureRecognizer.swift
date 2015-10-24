@@ -33,7 +33,7 @@ class ForceTouchGestureRecognizer: UIGestureRecognizer {
     var forceValue: CGFloat?
     var minimumValue: CGFloat = 0
     
-    private var previousValue: CGFloat = 0
+    private var maxValue: CGFloat = 0
     
     override func reset() {
         super.reset()
@@ -64,7 +64,7 @@ class ForceTouchGestureRecognizer: UIGestureRecognizer {
                 }
             } else {
                 
-                if value < previousValue {
+                if value < maxValue {
                     state = .Ended
                 } else {
                     previousValue = self.forceValue ?? 0

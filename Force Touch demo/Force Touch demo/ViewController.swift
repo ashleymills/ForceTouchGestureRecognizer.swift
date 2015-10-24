@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let forceTouch = ForceTouchGestureRecognizer(target: self, action: "pressView:")
+        forceTouch.tolerance = 0.1
         view.addGestureRecognizer(forceTouch)
     }
 
